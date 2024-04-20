@@ -1,13 +1,12 @@
-import Head from "../../../components/Static/Head"
+import React from 'react';
 
-
-
-const Notifications = () => {
+const BlogDetails = ({ blog }) => {
   return (
-    <div className="h-screen bg-teal-50/45">
-    <Head name="Notifications"/>
-  </div>
-  )
-}
+    <div className="bg-white p-4">
+      <h2 className="text-xl font-bold mb-4">{blog.title}</h2>
+      <p className="text-gray-700">{blog.content}</p>
+    </div>
+  );
+};
 
-export default Notifications
+export default BlogDetails;
